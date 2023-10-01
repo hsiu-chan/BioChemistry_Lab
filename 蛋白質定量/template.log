@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.15)  1 OCT 2023 20:44
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.15)  1 OCT 2023 21:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1288,7 +1288,7 @@ Package caption Info: subfigure package is loaded.
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box129
 )
-(template.aux)
+No file template.aux.
 \openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 267.
@@ -1302,7 +1302,7 @@ LaTeX Font Info:    ... okay on input line 267.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 267.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
 67.
- (C:\Program Files\MiKTeX\tex/latex/base\ts1cmr.fd
+(C:\Program Files\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 267.
@@ -1352,6 +1352,9 @@ LaTeX Font Info:    ... okay on input line 267.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 267.
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
@@ -1444,17 +1447,4 @@ File: paste_src/2023-09-28-04-14-53.png Graphic file (type bmp)
 <paste_src/2023-09-28-04-14-53.png>
 File: paste_src/2023-09-28-04-14-34.png Graphic file (type bmp)
 <paste_src/2023-09-28-04-14-34.png>
- [3]
-File: paste_src/2023-09-28-17-19-36.png Graphic file (type bmp)
-<paste_src/2023-09-28-17-19-36.png>
- [4]) [5] (template.aux) ) 
-Here is how much of TeX's memory you used:
- 34004 strings out of 410921
- 673202 string characters out of 2826935
- 1217200 words of memory out of 3000000
- 54246 multiletter control sequences out of 15000+600000
- 483981 words of font info for 116 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 99i,17n,103p,443b,2335s stack positions out of 10000i,1000n,20000p,200000b,80000s
-
-Output written on template.pdf (5 pages).
+ [3
