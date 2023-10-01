@@ -1,5 +1,9 @@
+\setlength{\parindent}{2em} %首行缩进
+
 \section*{實驗目的：}
 本實驗目的為使用ELISA分光光度計建立蛋白質濃度標準曲線，並測量未知蛋白質溶液濃度。預期蛋白質吸光值與蛋白質濃度呈線性，可根據已知濃度蛋白質溶液吸光值建立的迴歸直線與未知蛋白質溶液吸光值回推其濃度。
+
+而吸光值設定則因本次實驗使用Bradford assay，其中染劑Coomassie Blue G-250(CBG-250)與蛋白質結合後會再595nm有吸光值高峰，所以設定分光光度計595nm。
 
 \section*{實驗步驟：}
 
@@ -8,13 +12,13 @@
   \begin{enumerate}[label=(\arabic*)]
     \item BSA胎牛血清蛋白，濃度為1 mg/ml，以1.5ml eppendorf裝取35\mul
     \item Bradford reagent，以離心管裝取2.5ml
-    \item ddH2O，以1.5ml eppendorf裝取40ml
+    \item \ce{ddH2O}，以1.5ml eppendorf裝取40ml
     \item 再取八支1.5ml eppendorf，其中六支標上組別1\~{}6，剩下兩支標示A、B
     \item unknown待測溶液
-    \item 96孔盤，注意不要接觸盤底
+    \item 96孔盤，{\color{red}注意}不要接觸盤底
     \item ELISA reader
     \item 微量吸管P2、P200、P1000 及 tip
-    將1\~{}6及A、B eppendorf至於rack中，按照下表加入BSA及ddH2O。注意吸取微量體積時，tip不可沒入液面太深，避免取量誤差。
+    將1\~{}6及A、B eppendorf至於rack中，按照下表加入BSA及\ce{ddH2O}。{\color{red}注意}吸取微量體積時，tip不可沒入液面太深，避免取量誤差。
   \end{enumerate}
   
   \item 將1\~{}6及A、B eppendorf置於rack中，按照下表加入BSA及\ce{ddH2O}。{\color{red}注意}吸取微量體積時，tip不可沒入液面太深，避免取量誤差。
@@ -37,7 +41,7 @@ B&10&0\\
 
 \bottomrule
 \end{tabular}\end{table}
-\item 將Bradford reagent吸取300\mul 加入1\~{}6及A、B eppendorf。注意加入時不要碰到樣品，如此可重複使用tip。
+\item 將Bradford reagent吸取300\mul 加入1\~{}6及A、B eppendorf。{\color{red}注意}加入時不要碰到樣品，如此可重複使用tip。
 \item 加入後，手指輕彈eppendorf底部，並靜置5分鐘。
 \item 5分鐘後，自1\~{}6及A、B eppendorf吸取150\mul 樣品至96孔盤。
 \item 96孔盤放入ELISA reader，待機器讀取後，紀錄讀值。
@@ -46,7 +50,7 @@ B&10&0\\
 
 \section*{實驗結果及討論：}
 \subsection*{結果:}
-
+我們第一次染色反應後五分鐘，標準溶液透過迴歸分析得到的標準曲線R$^2$為0.889，依此回歸線得未知樣品濃度為0.811mg/ml；第二次實驗的吸光值，是我們再用第一次染色反應等待30分鐘後的樣品再跑一次ELISA reader，得到R$^2$為 0.916，依此標準曲線得到的未知樣品濃度為0.925mg/ml。第三次實驗數據是我們使用微量吸管重新調配1\~{}6及A、B eppendorf，再跑一次ELISA reader測得，標準曲線R$^2$為0.797，推得未知樣品濃度0.892 mg/ml。
 
 \begin{table}[ht]
 \caption{BAS吸光值回歸直線與未知BSA濃度} 
@@ -133,12 +137,28 @@ B(10\mul\ unknown)&0.249&0.371&0.222&0.341&0.68&1.411\\
     \item 操作微量吸管技術不佳，在吸取2\~{}10\mul 時，可能將tip插入液面太深，使tip外部沾取過多樣品，使得後續濃度出現誤差。
     \item 機器量測問題，老師有提到我們使用的機器在過往觀察中有個傾向是會在第6個樣品的吸光值會降低。
     \item 染色時間問題，我們組一共做出兩個R平方值，使用同一台機器在不同時間讀取，推測，如果染劑應該能與蛋白質維持一段時間穩定結合，那也有可能是染劑老化，品質較差。
+    \item 添加染劑後，可能混和不均，再等待染色反應的5分鐘裡，我們發現有一管樣品呈現分層的狀況，上層為藍色，下層為深咖啡色，推測可能是混不均勻。
+    \item 在第三次實驗中 BSA=0.6\mug 的吸光值特別高，我們認為可能是ELISA reader 測量時存在氣泡或灰塵導致。
   \end{enumerate}
 
-  \item 如何減少本次實驗所造成的誤差與錯誤?\\
-  在其他組有做出R平方值高達0.98的情況下，我認為最主要還是自己操作微量吸管的技巧要再更加精進。
-  \item 與本次實驗相關的其他方法或研究。
+  \item 如何減少本次實驗所造成的誤差與錯誤?
 
+  \qquad 在其他組有做出R平方值高達0.98的情況下，我認為最主要還是自己操作微量吸管的技巧要再更加精進。
+  \item 與本次實驗相關的其他方法或研究。
+  \begin{enumerate}[label=(\arabic*)]
+    \item 同的蛋白質定量方法
+    \begin{enumerate}[label=\alph*.]
+      \item 凱氏定氮法：原理是利用蛋白質含氮量，通過測定物質中含氮量來回推蛋白質的量。
+      \item UV吸光值280nm：主要利用含有苯環的氨基酸對於波長250以上有吸收作用的性質來測定蛋白質，含有phenylalanine、tyrosine或tryptophan的蛋白質可用此法測定。不過要注意可能有在280nm處有吸收作用的物質造成誤差(像是核酸)。檢測範圍：0.1-100 ug/ml。優點試紙需要少量樣品、便宜、快速；缺點是跟一些會使用到介面活性劑detergents、 變性劑denaturing agents的蛋白質萃取方法不相容。
+      \item Biuret法：機制是在鹼性溶液中二價銅離子與蛋白質反應後產生一價銅離子，後續再添加不同反應物可分為BCA法及Lowry法，不過反應皆是與一價銅離子產生反應，再進行吸光值測試。此法優點是不受介面活性劑以及變性劑影響、靈敏度佳；BCA法及Lowry法的缺點各有不同，不過同樣是會受到還原性強的物質干擾(例如還原糖)。
+      \item 螢光染色法：利用螢光染劑來檢測蛋白質中的胺。優點是敏感度高，僅需要少量樣品(0~ 150 ug/100 ul)；缺點是需要特別的影像系統。
+    \end{enumerate}
+  \end{enumerate}
+  
+  
+  
+  
+  
 \end{enumerate}
 
 
