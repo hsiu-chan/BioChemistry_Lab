@@ -1,20 +1,119 @@
 \setlength{\parindent}{2em} %首行缩进
 
 \section*{實驗目的：}
+本實驗讓我們學習使用Sephadex G50進行膠體過濾法，來將不同分子大小的蛋白質分離，運用的原理為分子篩(Molecular Sieve)，並利用Bradford assay與ELISA製作雙曲線圖(OD$_{450nm}$, OD$_{595nm}$)並確認蛋白質所在的管柱。最後使用ELISA繪製標準曲線圖以推估原蛋白質的濃度與回收率。
+
+
+\section*{實驗原理：}
+
+\begin{enumerate}
+  \item 運用\textbf{分子篩原理（Molecular sieve）}，依流徑長短、大小分子停留的時間不同來分開分子。
+  \item 運用的材料為Sephadex G50，名稱來自separation Pharmacia dextran，是一種葡聚醣凝膠，常用於凝膠過濾柱中，G後面的數字代表小珠的大小，因此可以視需要分離的分子大小選擇不同的Sephadex。\upcite{Wikipedia_2023_Sephadex}
+  \item \textbf{分子篩管柱層析法}：如\prettyref{fig:mf}所示，膠體上有孔洞可以卡住小分子，讓小分子跑進去再出來，所以花較多的時間從管柱排出，而大分子卡不進去，因此小分子會走的比大分子慢，大分子會先從管柱排出，可藉此性質分離大小不同的分子。
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.5\textwidth]{paste_src/2023-10-22-15-08-32.png}
+\caption{分子篩管柱層析法}
+\label{fig:mf}
+\end{figure}
 
 
 \section*{實驗步驟：}
 
+\subsection*{實驗器材}
+
+\begin{enumerate}[label=\arabic*.]
+  \item 管柱、管柱夾
+  \item 水
+  \item 滴管
+  \item 1xPBS緩衝液(Phosphate buffered Saline)
+  \item Sephadex G-50 膠體懸浮液
+  \item Sample：BSA（bovine serum albumin，牛血清蛋白）+ Methyl Orange
+  \item	Eppendorf、Micropipette、ELISA plate
+  \item	Bradford reagent
+\end{enumerate}
+
+
+\subsection*{步驟}
+
+\begin{enumerate}[label=\arabic*.]
+  \item 製備管柱
+  \begin{enumerate}[label=(\arabic*)]
+    \item 取管柱
+  
+    \item 加水進管柱，確定管柱可讓緩衝液順暢通過
+    \item 塞住管柱
+    \item 先加入 1xPBS 緩衝液到管柱中，並維持八分滿的高度
+    \item 加入均質的 Sephadex G-50 膠體懸浮液
+    \item 打開管柱
+    \item 持續加入並使其沉降至黑線位置左右
+    \item 滴管加 PBS 緩衝液進管柱，沖散 Sephadex G50 使之重新均勻堆疊
+    \item 待上方緩衝液流下，直到管柱下方不再滴出緩衝液就可以塞住管柱
+  \end{enumerate}
+  \item 放入Sample
+  \begin{enumerate}[label=(\arabic*)]
+    \item 用micropipette吸取10μl的BSA+Methyl orange(本次實驗 sample)
+    \item 將micropipette伸進管柱內，把Sample 滴加在膠體正上方(不可碰到管壁)
+    \item 小心將緩衝液加入管柱內，需注意避免將Sample沖散，使緩衝液滿溢到管柱口，並形成表面張力。
+  \end{enumerate}
+  \item 收集樣品
+  \begin{enumerate}[label=(\arabic*)]
+    \item 將eppendorf事先標號碼。
+    \item 打開管柱，馬上開始收集濾出來的液體。
+    \item 每 10 滴收集到一個 eppendorf，共收集10管。
+  \end{enumerate}
+  \item 檢測收集成果並繪製雙曲線圖
+  \begin{enumerate}[label=(\arabic*)]
+    \item 利用 micropipette，分別將收集到的10個 eppendorf 取各取10μl，加入 100μl Bradford reagent，放在eppendorf中，在室溫中反應3$\sim$5分鐘，使其混合均勻。
+    \item 取100μl放入ELISA plate，利用OD$_{595nm}$測定。此為確認大分子於何管柱流出。
+    \item 另外取 100μl 未跟Bradford reagent 反應過的原樣品液，依序注入ELISA plate，利用OD$_{450nm}$測定。此為確認小分子於何管柱流出。
+    \item 將結果繪製於excel檔中。
+  \end{enumerate} 
+  \item 測定純化出的大分子蛋白的濃度。
+  \begin{enumerate}[label=(\arabic*)]
+    \item 取OD$_{595nm}$吸光值最高的原始管子，進行Bradford assay。
+    \item 取八支eppendorf，分別放入BSA 0,2,4,6,8,10μl及Unknown1:2μl Unknown2:4μl溶於\ce{ddH2O}至最終容量為10μg。
+    \begin{table}[ht]
+      \centering
+      \begin{tabular}{ccc}
+      \toprule
+      管號&BSA \ce{(\mu l)}& \ce{ddH2O(\mu l)}\\
+      \midrule
+      1&0&10\\
+      2&2&8\\
+      3&4&6\\
+      4&6&4\\
+      5&8&2\\
+      6&10&0\\
+      \midrule
+      A (2μl Unknown)&2&8\\
+      B (4μl Unknown)&4&6\\
+    
+      \bottomrule
+    \end{tabular}\end{table}
+    \item 每管加入 300μl 的 Bradford Reagent。
+    \item 加入後，用手指輕彈eppendorf底部，並靜置5分鐘。
+    \item 自八支eppendorf各吸取150\mul 至96孔盤。
+    \item 放入ELISA reader，利用OD$_{595nm}$測定。
+  \end{enumerate}
+
+  
+\end{enumerate}
+
+
 
 \section*{實驗結果及討論：}
-\subsection*{結果:}
+\subsection*{結果}
 \begin{enumerate}
-  \item 根據\prettyref{fig:gel_filtration}，膠體過濾實驗中 OD$_{595nm}$的峰值發生在Fraction 3，而OD$_{450nm}$的峰值發生在Fraction 6。
+  \item 根據\prettyref{fig:gel_filtration}，膠體過濾實驗中 OD$_{595nm}$（大分子蛋白質）的峰值發生在Fraction 3，而OD$_{450nm}$（小分子蛋白質）的峰值發生在Fraction 6。
   \item 根據\prettyref{tab:BSA}, \prettyref{fig:stand_curve} ，得知BSA濃度標準曲線 $y=0.0673x+0.0301,\ R^2=0.966$，即可推算 Fraction 3 的濃度為 0.804 \mug/\mul。 
   \item Fraction 3 的層析液約為 350\mul ，BSA 回收率為
   $$
   \frac{0.804(\mug/\mul)\times 350(\mul)}{1(\mug/\mul)\times 500(\mul)}=0.562
   $$
+
 
 
 \end{enumerate}
@@ -25,7 +124,7 @@
 
 
 
-\subsection*{實驗數據:}
+\subsection*{實驗數據}
 
 \begin{table}[h]
 \begin{minipage}[t]{0.45\textwidth}
@@ -87,12 +186,12 @@
   \end{tabular}}
 \end{table}
 
-\subsection*{實驗作圖：}
+\subsection*{實驗作圖}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.8\textwidth]{paste_src/2023-10-18-22-15-33.png}
-\caption{膠體層析吸光值}
+\caption{膠體層析吸光值雙曲線}
 \label{fig:gel_filtration}
 \vspace{1em}
 \includegraphics[width=.8\textwidth]{paste_src/2023-10-18-22-23-08.png}
@@ -104,7 +203,24 @@
 
 
 \subsection*{實驗討論：}
+\begin{enumerate}[label=\arabic*.]
+  \item 如\prettyref{tab:gel_filtration}, \prettyref{fig:gel_filtration}，第一至第八管的順序為收集蛋白質的順序，可知第三管所收集到的大分子蛋白含量最高，第五和第六管則是收集到較多的小分子蛋白，因此可得出\textbf{小分子蛋白會在管柱內待得比較久}的結論。
+  \item 老師上課有提到，兩個高峰值出現相距最好要超過兩管，才是比較好的分離，我們這次實驗大分子蛋白的峰值出現在第三管，小分子蛋白的峰值出現在第五及第六管，所以在分離方面有達到標準。
+  \item BSA(大分子蛋白，\prettyref{fig:gel_filtration}中OD$_{595nm}$曲線)雖然第三管的峰值有做出來，但第一及第二管的數值偏高，造成此情況可能的原因是流速過快所導致。
+  \item Methyl Orange(小分子蛋白，\prettyref{fig:gel_filtration}中OD$_{450nm}$曲線)峰值在第五及第六管，可能的原因為在放入Sample後，再加入緩衝液的力道過大，導致Sample有些微被沖散，因此離開管柱的時間拉長。
+  \item \prettyref{fig:96}中E排為第一至第八管各取10\mul ，加入 100\mul\ Bradford reagent，已知 Bradford reagent 會與蛋白質結合呈現藍色。可以明顯以肉眼觀察到第三管有明顯的藍色，即第三管有最多的蛋白質。
+  \item \prettyref{fig:96}圖中F排為第一至第八管各取100\mul，可以用肉眼觀察到第五及第六管明顯有收集到橘色的小分子蛋白(Methyl Orange)。
+  
+  
+\end{enumerate}
 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.8\textwidth]{paste_src/2023-10-22-16-03-54.png}
+\caption{96孔盤}
+\label{fig:96}
+\end{figure}
 
 \bibliography{bibfile} 
 \bibliographystyle{unsrt}
