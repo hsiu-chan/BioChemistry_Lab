@@ -54,7 +54,7 @@
   \end{enumerate}
   \item 放入Sample
   \begin{enumerate}[label=(\arabic*)]
-    \item 用micropipette吸取10μl的BSA+Methyl orange(本次實驗 sample)
+    \item 用micropipette吸取10μl的BSA+Methyl orange(本次實驗 sample，BSA 濃度 50\mug/\mul)
     \item 將micropipette伸進管柱內，把Sample 滴加在膠體正上方(不可碰到管壁)
     \item 小心將緩衝液加入管柱內，需注意避免將Sample沖散，使緩衝液滿溢到管柱口，並形成表面張力。
   \end{enumerate}
@@ -62,7 +62,7 @@
   \begin{enumerate}[label=(\arabic*)]
     \item 將eppendorf事先標號碼。
     \item 打開管柱，馬上開始收集濾出來的液體。
-    \item 每 10 滴收集到一個 eppendorf，共收集10管。
+    \item 每 10 滴收集到一個 eppendorf，共收集10管 (每一管大約350\mul)。
   \end{enumerate}
   \item 檢測收集成果並繪製雙曲線圖
   \begin{enumerate}[label=(\arabic*)]
@@ -74,7 +74,7 @@
   \item 測定純化出的大分子蛋白的濃度。
   \begin{enumerate}[label=(\arabic*)]
     \item 取OD$_{595nm}$吸光值最高的原始管子，進行Bradford assay。
-    \item 取八支eppendorf，分別放入BSA 0,2,4,6,8,10μl及Unknown1:2μl Unknown2:4μl溶於\ce{ddH2O}至最終容量為10μg。
+    \item 取八支eppendorf，分別放入BSA 0,2,4,6,8,10μl及 A(2\mul unknown), B(2\mul unknown)溶於\ce{ddH2O}至最終容量為10μl。
     \begin{table}[ht]
       \centering
       \begin{tabular}{ccc}
@@ -109,9 +109,9 @@
 \begin{enumerate}
   \item 根據\prettyref{fig:gel_filtration}，膠體過濾實驗中 OD$_{595nm}$（大分子蛋白質）的峰值發生在Fraction 3，而OD$_{450nm}$（小分子蛋白質）的峰值發生在Fraction 6。
   \item 根據\prettyref{tab:BSA}, \prettyref{fig:stand_curve} ，得知BSA濃度標準曲線 $y=0.0673x+0.0301,\ R^2=0.966$，即可推算 Fraction 3 的濃度為 0.804 \mug/\mul。 
-  \item Fraction 3 的層析液約為 350\mul ，BSA 回收率為
+  \item Fraction 3 的層析液約為 350\mul，而 Sample BSA 濃度為 50\mug/\mul 因此 BSA 回收率為
   $$
-  \frac{0.804(\mug/\mul)\times 350(\mul)}{1(\mug/\mul)\times 500(\mul)}=0.562
+  \frac{0.804(\mug/\mul)\times 350(\mul)}{50(\mug/\mul)\times 10(\mul)}=0.562
   $$
 
 
@@ -169,7 +169,7 @@
 \begin{table}[ht]
   \setlength{\abovecaptionskip}{0cm} % 调整caption间距
   \setlength{\tabcolsep}{10mm}{
-  \caption{BAS吸光值回歸直線與回收率} 
+  \caption{BAS吸光值回歸直線與回收率} \label{tab:result_data}
   \begin{tabular}{llll}
     \toprule
     y=a+bx&\\
@@ -201,7 +201,7 @@
 
 
 
-
+\newpage
 \subsection*{實驗討論：}
 \begin{enumerate}[label=\arabic*.]
   \item 如\prettyref{tab:gel_filtration}, \prettyref{fig:gel_filtration}，第一至第八管的順序為收集蛋白質的順序，可知第三管所收集到的大分子蛋白含量最高，第五和第六管則是收集到較多的小分子蛋白，因此可得出\textbf{小分子蛋白會在管柱內待得比較久}的結論。
@@ -210,17 +210,22 @@
   \item Methyl Orange(小分子蛋白，\prettyref{fig:gel_filtration}中OD$_{450nm}$曲線)峰值在第五及第六管，可能的原因為在放入Sample後，再加入緩衝液的力道過大，導致Sample有些微被沖散，因此離開管柱的時間拉長。
   \item \prettyref{fig:96}中E排為第一至第八管各取10\mul ，加入 100\mul\ Bradford reagent，已知 Bradford reagent 會與蛋白質結合呈現藍色。可以明顯以肉眼觀察到第三管有明顯的藍色，即第三管有最多的蛋白質。
   \item \prettyref{fig:96}圖中F排為第一至第八管各取100\mul，可以用肉眼觀察到第五及第六管明顯有收集到橘色的小分子蛋白(Methyl Orange)。
-  
-  
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\textwidth]{paste_src/2023-10-22-16-03-54.png}
+    \caption{96孔盤}
+    \label{fig:96}
+  \end{figure}
+  \item 蛋白質容液黏滯力較大，容易沾在 pipette tip 上導致 eppendorf 中 BSA 的量較少，ELISA 測出來的濃度偏低。而 \prettyref{tab:result_data} 中A管的濃度較B管低可能是因為 A 管的 BSA 量較少(2\mul)，受到沾在 pipette tip 的蛋白質影響較大。我們仍需要加強 pipette 的使用技巧。
+    
 \end{enumerate}
+  
 
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=.8\textwidth]{paste_src/2023-10-22-16-03-54.png}
-\caption{96孔盤}
-\label{fig:96}
-\end{figure}
+
+
+
+
 
 \bibliography{bibfile} 
 \bibliographystyle{unsrt}
