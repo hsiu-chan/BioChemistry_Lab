@@ -1,14 +1,15 @@
 \setlength{\parindent}{2em} %首行缩进
 
 \section*{實驗目的：}
-本實驗讓我們學習使用Sephadex G50進行膠體過濾法，來將不同分子大小的蛋白質分離，運用的原理為分子篩(Molecular Sieve)，並利用Bradford assay與ELISA製作雙曲線圖(OD$_{450nm}$, OD$_{595nm}$)並確認蛋白質所在的管柱。最後使用ELISA繪製標準曲線圖以推估原蛋白質的濃度與回收率。
+本實驗讓我們學習使用Sephadex G-50進行膠體過濾法，來將不同分子大小的蛋白質分離，運用的原理為分子篩(Molecular Sieve)，並利用Bradford assay與ELISA製作雙曲線圖(OD$_{450nm}$, OD$_{595nm}$)並確認蛋白質所在的管柱。最後使用ELISA繪製標準曲線圖以推估原蛋白質的濃度與回收率。
 
 
 \section*{實驗原理：}
 
 \begin{enumerate}
   \item 運用\textbf{分子篩原理（Molecular sieve）}，依流徑長短、大小分子停留的時間不同來分開分子。
-  \item 運用的材料為Sephadex G50，名稱來自separation Pharmacia dextran，是一種葡聚醣凝膠，常用於凝膠過濾柱中，G後面的數字代表小珠的大小，因此可以視需要分離的分子大小選擇不同的Sephadex。\upcite{Wikipedia_2023_Sephadex}
+  \item 運用的材料為Sephadex G-50，名稱來自separation Pharmacia dextran，是一種葡聚醣凝膠。\cite{Wikipedia_2023_Sephadex} Sephadex G-50 常用於凝膠過濾柱中，其中的G代表Gel，而數字則代表回水率，即 Sephadex G-50 每克的dry gel需要5.0克的水。\cite{Sephadex65:online}%https://www.sigmaaldrich.com/TW/en/product/sigma/g5080
+
   \item \textbf{分子篩管柱層析法}：如\prettyref{fig:mf}所示，膠體上有孔洞可以卡住小分子，讓小分子跑進去再出來，所以花較多的時間從管柱排出，而大分子卡不進去，因此小分子會走的比大分子慢，大分子會先從管柱排出，可藉此性質分離大小不同的分子。
 \end{enumerate}
 
@@ -49,7 +50,7 @@
     \item 加入均質的 Sephadex G-50 膠體懸浮液
     \item 打開管柱
     \item 持續加入並使其沉降至黑線位置左右
-    \item 滴管加 PBS 緩衝液進管柱，沖散 Sephadex G50 使之重新均勻堆疊
+    \item 滴管加 PBS 緩衝液進管柱，沖散 Sephadex G-50 使之重新均勻堆疊
     \item 待上方緩衝液流下，直到管柱下方不再滴出緩衝液就可以塞住管柱
   \end{enumerate}
   \item 放入Sample
@@ -221,6 +222,22 @@
 \end{enumerate}
   
 
+
+
+
+\section{延伸討論}
+
+\subsection*{Molecular Sieve(分子篩)}
+Molecular Sieve(分子篩)是利用材料具有相似孔洞大小的特性，使小分子需要經過孔洞，所需要的時間較久，而大分子則會從孔洞旁經過，會較快經過材料，而達到分離不同大小分子的效果。IUPAC依據孔洞直徑的大小，將材料分為:\cite{Molecula6:online}%\url{https://en.wikipedia.org/wiki/Molecular_sieve}
+
+\begin{itemize}
+  \item Mircroporous material (<2nm)
+  \item Mesoporous material (2nm~50nm)
+  \item Macroporous material(>50nm)
+\end{itemize}
+
+然而更精確地來說，分離所依據的並非是分子的Molecular Weight，而是分子的Hydrodynamic Radius，所以就算是相同分子量的長鏈狀及球狀分子，其在分子篩管柱層析中的表現也不會一樣，球狀分子會需要比較久的時間才會析出。\cite{YMCSECMA7:online}
+%https://ymctaiwan.com/portfolio/ymc_sec/#1607415269821-f456a30f-6b38
 
 
 
